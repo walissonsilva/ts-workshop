@@ -27,7 +27,7 @@ class UsersRepository {
 
   remove(id) {
     const userToRemove = this.findById(id);
-    
+
     if (!userToRemove) {
       throw new Error(`User with id ${id} not found`);
     }
